@@ -22,7 +22,7 @@ public class Persona {
     public void setApellidos (String valorapellidos){
         apellidos = "apellidos" + valorapellidos;// los apellidos del objeto persona adquiere el valor que contenga valorapellidos
     }
-    //Método para establecer los edad de una persona
+    //Método para establecer la edad de una persona
     public void setEdad (int valoredad){
         edad = valoredad;//la edad del objeto persona adquiere el valor que contenga valor edad
     }
@@ -35,16 +35,17 @@ public class Persona {
     public String getApellidos () { return apellidos; }
     //Método para obtener la edad del objeto persona
     public int getEdad () { return edad; }
+    public int getcontadorPersonas() { return idPersona; }
 
     @Override
     public String toString() {
         return "Persona{"+
                 "idPersona="+idPersona+
-                "nombre="+nombre+
-                "apellidos="+apellidos+
-                "edad="+edad+
+                ", nombre="+nombre+ '\''+
+                ", apellidos="+apellidos+'\''+
+                ", edad="+edad+
                 "}";
     }
 
-    public int getcontadorPersonas() { return idPersona; }
+
 }

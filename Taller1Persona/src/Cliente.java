@@ -6,8 +6,8 @@ public class Cliente extends Persona{
 
 
     //Constructor
-    public Cliente (String nombre, String apellidos, int edad, int idCliente, Date fechaRegistro){
-        super(nombre, apellidos, edad,idCliente);
+    public Cliente (int idPersona,String nombre, String apellidos, int edad, int idCliente){
+        super(nombre, apellidos, idPersona,edad);
         this.idCliente = idCliente;
       fechaRegistro= new Date();
 

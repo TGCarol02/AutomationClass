@@ -1,14 +1,14 @@
 
 public class Ejecutar {
 public static void main (String args[]){
-    Cliente c = new Cliente("Jose", "Wolf",35, 1, 3918409);
+    Cliente c = new Cliente(1,"Jose", "Wolf",35, 1);
     System.out.println(c);
     System.out.println(c.getcontadorPersonas());
     System.out.println(c.toString());
 
 
 
-    Empleado e1 =  new Empleado("ferguson","andres",40, 29L, 2500);
+    Empleado e1 =  new Empleado(2, "ferguson","andres",40, 29L, 2500);
     System.out.println(e1.toString());
     System.out.println(e1.getcontadorPersonas());
 
